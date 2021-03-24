@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="3dp">
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="tim" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/ivBookmark"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@drawable/ufi_save_icon" />
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivComment"
+            app:srcCompat="@drawable/ufi_new_direct" />
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ufi_heart" />
+
+        <ImageView
+            android:id="@+id/ivComment"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivLike"
+            app:srcCompat="@drawable/ufi_comment" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        tools:text="yoyoyo" />
+
+</LinearLayout>
